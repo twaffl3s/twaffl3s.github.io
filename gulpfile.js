@@ -30,6 +30,16 @@ gulp.task('sass-resume', function () {
         .pipe(gulp.dest('_includes'))
         .pipe(browserSync.reload({stream:true}));
 });
+gulp.task('sass-bio', function () {
+    return gulp.src('_scss/bio.scss')
+        .pipe(sass())
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(minifycss())
+        .pipe(rename('bio.min.css'))
+        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('_includes'))
+        .pipe(browserSync.reload({stream:true}));
+});
 gulp.task('sass-post-lists', function () {
     return gulp.src('_scss/post_listings.scss')
         .pipe(sass())
@@ -116,7 +126,7 @@ gulp.task('sass-posts', function () {
  * Minify images too
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-resume', 'sass-post-lists', 'sass-posts']);
+    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-resume', 'sass-bio', 'sass-post-lists', 'sass-posts']);
     // gulp.watch(['index.html', 'archive.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*', 'archive/*', 'diffeedemo/*', 'speaking/*', 'about/*'], ['jekyll-rebuild']);
     // gulp.watch(['images/*'], ['imagemin']),
     // gulp.watch(['js/*.js'], ['jekyll-build'])
