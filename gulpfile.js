@@ -4,7 +4,29 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var minifycss   = require('gulp-minify-css');
 var rename      = require('gulp-rename');
+var cp          = require('child_process');
 var scsslint    = require('gulp-scss-lint');
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+/**
+ * Build the Jekyll Site
+ */
+var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn(jekyll, ['build'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload();
+});
 
 /**
  * Compile files from _scss into both css and _includes
@@ -56,6 +78,16 @@ gulp.task('sass-posts', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(minifycss())
         .pipe(rename('posts.min.css'))
+        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('_includes'))
+        .pipe(browserSync.reload({stream:true}));
+});
+gulp.task('sass-mediaqueries', function () {
+    return gulp.src('_scss/media_queries.scss')
+        .pipe(sass())
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(minifycss())
+        .pipe(rename('media_queries.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
         .pipe(browserSync.reload({stream:true}));
@@ -126,8 +158,8 @@ gulp.task('sass-posts', function () {
  * Minify images too
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-resume', 'sass-bio', 'sass-post-lists', 'sass-posts']);
-    // gulp.watch(['index.html', 'archive.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*', 'archive/*', 'diffeedemo/*', 'speaking/*', 'about/*'], ['jekyll-rebuild']);
+    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-resume', 'sass-mediaqueries', 'sass-bio', 'sass-post-lists', 'sass-posts']);
+    gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*'], ['jekyll-rebuild']);
     // gulp.watch(['images/*'], ['imagemin']),
     // gulp.watch(['js/*.js'], ['jekyll-build'])
 });
