@@ -4,7 +4,5 @@ Welcome to my, Antoinette's, github repo for my portfolio. Here, you can see eve
 
 ## TODO
 
-- Convert bio page
-- Convert resume
 - Add mobile styles
 - Add tooltip lib
