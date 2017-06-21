@@ -67,12 +67,13 @@ nav {
   p a {
     color: black;
     padding: 2px 4px;
-    display: inline-block;
+    display: block;
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
     -webkit-transition: background-position .15s, color .25s; 
     -moz-transition: background-position .15s, color .25s; 
     transition: background-position .15s, color .25s;
+    background-repeat: no-repeat;
     &:hover {
       background-position: 0% 100%;
     } 
@@ -94,10 +95,10 @@ nav {
       padding: 0.3em 1.25rem;
       margin: 0;
       background-image: linear-gradient(to right, transparent 50%, #000 50%);
-      background-size: 200% 100%;
+      background-size: 201% 100%;
       transition: .2s; 
       &:hover {
-        background-position: -100% 0;
+        background-position: -99% 0;
         cursor: pointer;
         a {
           &:before, span:after {
@@ -107,7 +108,7 @@ nav {
         }
         span:after {
           width: 100%;
-          right: -10.5rem;
+          right: -10rem;
         }
       }
       a {
