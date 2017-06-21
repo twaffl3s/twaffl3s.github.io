@@ -1,3 +1,4 @@
+@import 'colors';
 @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
     .mobile-only {
       display: block;
@@ -68,21 +69,21 @@
     #made-cont {
       float: right;
     }
-    .scrolling nav p{
+    .scrolling nav p {
       display: none;
     }
-    main > .post{
+    main > .post {
       position: relative;
     }
     main {
-      background: #f9e4e4;
+      background: $blush_pink;
       position: relative;
     }
     nav {
       background: #f8cbcb;
       width: 100%;
       z-index: 3;
-      padding: 0.75em 1em;
+      padding: 0.7rem 1rem;
       box-sizing: border-box;
       height: auto;
       border-bottom: 1px solid #000;
@@ -91,19 +92,24 @@
       margin-top: -2px;
       ul {
         padding: 0;
-        margin-top: 0em;
+        margin: 0;
         &:after{
           height: 100%;
         }
-        li{
+        li {
           display: inline-block;
-          padding: 0 0.5em;
+          padding: 0 0.5rem;
+          background: transparent;
           &:first-child{
-              padding-left: 0;
-            }
+            padding-left: 0;
+          }
           a {
-            font-size: 1em;
-            span{
+            font-size: 1rem;
+            transition: none;
+            &:before, &:after {
+              content: none;
+            }
+            span {
               display: none;
             }
           }
@@ -111,22 +117,18 @@
       }
       p {
         padding: 0;
-        margin-bottom: 0.5em;
-        font-size: 1em;
+        margin: 0 0 0.3rem;
+        font-size: 1rem;
       }
     }
-    #gallery-carousel > .post-container > .post.ivycat-post h2.entry-title, #body-content > .post.ivycat-post h2.entry-title{
-      font-size: 1.25em;
+    main .post-title {
+      font-size: 1.25rem;
       margin-bottom: 0;
+      margin-top: 0.3rem;
     }
-    #gallery-carousel > .post-container > .post.ivycat-post h2.entry-title:after, #body-content > .post.ivycat-post h2.entry-title:after{
-      margin-top: 0.3em;
-    }
-    #gallery-carousel > .post-container > .post.ivycat-post .entry-summary, #body-content > .post.ivycat-post .entry-summary{
-      margin-top: 0.8em;
-    }
-    #gallery-carousel > .post-container > .post.ivycat-post .entry-summary p{
-      margin-bottom: 0.8em;
+    main .post-excerpt {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
     }
     main {
       width: 100%;
@@ -150,8 +152,17 @@
       overflow-y: auto;
       padding-bottom: 3.5em;
     }
-    #footer #social-media, #made-cont{
-      margin-top: -0.25em;
+    #footer {
+      #social-media, #made-cont {
+        clear: none;
+      }
+      #social-media {
+        margin-top: -0.25rem;
+        float: left;
+      }
+      #made-cont {
+        float: right;
+      }
     }
     .row .resp {
       display: table;

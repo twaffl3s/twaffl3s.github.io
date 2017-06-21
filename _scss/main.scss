@@ -154,7 +154,9 @@ main {
   height: 100%;
   padding: 0;
   background: $blush_pink;
-  overflow-y: auto;
+  p {
+    font-size: 0.9rem;
+  }
   a:not(.post-img) {
     color: #9b9b9b;
     display: inline-block;
