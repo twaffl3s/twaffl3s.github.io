@@ -5,10 +5,10 @@ function onScroll(elm, styleAttr, maxAttr){
 	}
 }
 window.addEventListener('scroll', function(){
-	if(window.pageYOffset >= Number(getComputedStyle(document.getElementById('sidebar')).height.replace('px','')) - (Number(getComputedStyle(document.querySelector('#sidebar ul')).height.replace('px','')) + Number(getComputedStyle(document.getElementById('sidebar')).paddingTop.replace('px',''))+ Number(getComputedStyle(document.getElementById('sidebar')).paddingBottom.replace('px','')))){
-		document.getElementById('container').className = 'scrolling';
+	if(window.pageYOffset >= Number(getComputedStyle(document.querySelector('nav')).height.replace('px','')) - (Number(getComputedStyle(document.querySelector('nav ul')).height.replace('px','')) + Number(getComputedStyle(document.querySelector('nav')).paddingTop.replace('px',''))+ Number(getComputedStyle(document.querySelector('nav')).paddingBottom.replace('px','')))){
+		document.body.className = 'scrolling';
 	} else {
-		document.getElementById('container').className = '';
+		document.body.className = '';
 	}
 });
 window.onload = function(){
