@@ -1,0 +1,37 @@
+@import 'colors';
+.post-title {
+  font-family: 'Karla', serif;
+  text-decoration: none;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  background: #FFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  .post-preview {
+    padding: 1.25em 1em;
+    background: #FFF;
+    border-bottom: 1px solid $blush_pink;
+    a {
+      color: #000;
+      font-family: 'Noto Serif', serif;
+      font-size: 0.9em;
+    }
+    h2 {
+      margin-top: 0;
+      &:after {
+        width: 3.5em;
+        height: 1px;
+        background: #cecece;
+        content: " ";
+        display: block;
+        margin-top: 0.4em;
+      }
+    }
+  }
+}

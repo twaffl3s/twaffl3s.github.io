@@ -1,0 +1,90 @@
+@import 'colors';
+#content {
+  padding: 1em 1.5em;
+  background: white;
+  h1, h2, h3 {
+    font-family: 'Karla', sans-serif;
+  }
+  h1 {
+    border-bottom: 2px solid #cecece;
+    display: inline-block;
+    margin-top: 0;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.75em;
+    
+  }
+  h2 {
+    &:after {
+      width: 3.5em;
+      height: 1px;
+      background: #cecece;
+      content: " ";
+      display: block;
+      margin-top: 0.4em;
+    }
+  }
+  h3 {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.25em;
+    margin: 0 0 0.25em;
+    + p {
+      margin-top: 0;
+    }
+  }
+  p:first-of-type::first-letter {
+    float: left; 
+    color: #f8cbcb; 
+    font-size: 4em; 
+    line-height: 0.8em; 
+    padding-right: 0.3rem;
+    padding-left: 0px;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+  }
+  .post-img {
+    max-width: 400px;
+    max-height: 300px;
+    position: relative;
+    float: left;
+    margin: 0 20px 20px 0;
+    border: 1px solid #000;
+    line-height: 0;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    span {
+      font-family: 'Karla', sans-serif;
+      position: absolute;
+      display: inline-block;
+      padding: 5px 8px;
+      bottom: 0;
+      right: 0;
+      background: #000;
+      color: #FFF;
+      line-height: 1;
+    }
+  }
+  p {
+    font-family: 'Noto Serif', serif;
+    font-size: 0.9em;
+    a:not(.post-img) {
+      color: #9b9b9b;
+      display: inline-block;
+      background-size: 100% 200%;
+      background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
+      -webkit-transition: background-position .15s, color .25s; 
+      -moz-transition: background-position .15s, color .25s; 
+      transition: background-position .15s, color .25s;
+      &:hover {
+        background-position: 0% 100%;
+        color: black;
+      } 
+    }
+  }
+  pre {
+    border: 1px solid #9b9b9b;
+    padding: 0.5rem;
+  }
+}

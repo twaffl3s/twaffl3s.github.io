@@ -1,0 +1,10 @@
+<nav>
+  <p>Hello. My name is <a href="/bio"><b>Antoinette Janus</b></a>. I'm a developer and designer based in Washington, D.C.</p>
+  <ul role="navigation">
+    <li><a data-linktext="Home" {% if page.title == "Home" %}class="active"{% endif %} href="/">Home<span>&nbsp;»</span></a></li>
+    <li><a data-linktext="Resume" {% if page.title == "Resume" %}class="active"{% endif %} href="/resume">Resume<span>&nbsp;»</span></a></li></li>
+    <li><a data-linktext="Bio" {% if page.title == "Bio" %}class="active"{% endif %} href="/bio">Bio<span>&nbsp;»</span></a></li>
+    <li><a data-linktext="Blog" {% if page.title == "Blog" %}class="active"{% endif %} href="/blog">Blog<span>&nbsp;»</span></a></li>
+    <li><a data-linktext="Works" {% if page.title == "Works" %}class="active"{% endif %} href="/works">Works<span>&nbsp;»</span></a></li>
+  </ul>
+</nav>
