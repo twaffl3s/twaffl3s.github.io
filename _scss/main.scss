@@ -33,9 +33,22 @@ a {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: 'Noto Serif', serif;
   height: 100%;
   width: 100%;
+}
+h1 {
+  font-family: 'Karla', sans-serif;
+  border-bottom: 2px solid #cecece;
+  display: inline-block;
+  margin-top: 0;
+  padding-bottom: 0.2em;
+}
+h3 {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 0 0 0.25em;
 }
 nav {
   position: absolute;
@@ -142,6 +155,19 @@ main {
   padding: 0;
   background: $blush_pink;
   overflow-y: auto;
+  a:not(.post-img) {
+    color: #9b9b9b;
+    display: inline-block;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
+    -webkit-transition: background-position .15s, color .25s; 
+    -moz-transition: background-position .15s, color .25s; 
+    transition: background-position .15s, color .25s;
+    &:hover {
+      background-position: 0% 100%;
+      color: black;
+    } 
+  }
 }
 #footer {
   width: 20%;
