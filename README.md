@@ -4,5 +4,4 @@ Welcome to my, Antoinette's, github repo for my portfolio. Here, you can see eve
 
 ## TODO
 
-- Add mobile styles
-- Add tooltip lib
+- Triple check mobile css
