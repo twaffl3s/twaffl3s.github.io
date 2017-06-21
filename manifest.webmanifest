@@ -1,0 +1,22 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Home | Antoinette Janus",
+  "scope": "/",
+  "display": true,
+  "start_url": "/",
+  "short_name": "Home | Antoinette",
+  "theme_color": "#f8cbcb",
+  "description": "The ponderings and explorations related to all things web by Antoinette Janus",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://una.im/images/favicon.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    }
+  ]
+}
