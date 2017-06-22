@@ -67,7 +67,7 @@ nav {
   p a {
     color: black;
     padding: 2px 4px;
-    display: block;
+    display: inline-block;
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
     -webkit-transition: background-position .15s, color .25s; 
