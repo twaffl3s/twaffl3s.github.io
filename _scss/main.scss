@@ -92,11 +92,11 @@ nav {
     }
     li {
       list-style-type: none;
-      padding: 0.3em 1.25rem;
       margin: 0;
       background-image: linear-gradient(to right, transparent 50%, #000 50%);
       background-size: 201% 100%;
       transition: .2s; 
+      padding: 0.4rem 1.25rem;
       &:hover {
         background-position: -99% 0;
         cursor: pointer;
@@ -117,7 +117,6 @@ nav {
         display: block;
         font-family: 'Karla', sans-serif;
         font-weight: 700;
-        font-size: 1.25rem;
         position: relative;
         &:before, &:after {
           transition: 0.2s;

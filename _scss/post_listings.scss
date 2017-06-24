@@ -14,13 +14,12 @@
   overflow-y: auto;
   width: 100%;
   .post-preview {
-    padding: 1.25em 1em;
     background: #FFF;
     border-bottom: 1px solid $blush_pink;
     a {
       color: #000;
-      font-size: 0.9em;
       background: transparent;
+      padding: 1.25rem 1.75rem;
     }
     h2 {
       margin-top: 0;
