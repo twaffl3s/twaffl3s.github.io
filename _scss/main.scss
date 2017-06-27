@@ -37,15 +37,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
-h1 {
-  font-family: 'Karla', sans-serif;
-  border-bottom: 2px solid #cecece;
-  display: inline-block;
+h1, h2 {
   margin-top: 0;
-  padding-bottom: 0.2em;
-}
-h2 {
-  margin-top: 0;
+  font-size: 1.4rem;
   &:after {
     width: 4rem;
     height: 1px;

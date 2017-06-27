@@ -11,14 +11,18 @@
   background: white;
   padding: 1em 1.5em;
   font-family: "Karla", sans-serif;
+  h1 {
+    font-family: 'Karla', sans-serif;
+    border-bottom: 2px solid #cecece;
+    display: inline-block;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+  }
 }
 .res-cat {
   padding-bottom: 0.4em;
   display: inline-block;
   padding-top: 1em;
-}
-h1 {
-  margin-bottom: 1rem;
 }
 h4 {
   color: #000;
