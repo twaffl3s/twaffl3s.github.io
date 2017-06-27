@@ -44,6 +44,17 @@ h1 {
   margin-top: 0;
   padding-bottom: 0.2em;
 }
+h2 {
+  margin-top: 0;
+  &:after {
+    width: 4rem;
+    height: 1px;
+    background: #cecece;
+    content: " ";
+    display: block;
+    margin-top: 0.4em;
+  }
+}
 h3 {
   color: #000;
   font-weight: 400;
@@ -119,7 +130,7 @@ nav {
         font-weight: 700;
         font-size: 1.25rem;
         position: relative;
-        padding: 0.3em 1.25rem;
+        padding: 0.3rem 1.25rem;
         &:before, &:after {
           transition: 0.2s;
         }
@@ -131,6 +142,7 @@ nav {
           left: 0;
           width: 0%;
           overflow: hidden;
+          margin: 0.3rem 1.25rem;
         }
         span {
           &:after {
@@ -142,6 +154,7 @@ nav {
             color: #f8cbcb;
             width: 0;
             overflow: hidden;
+            margin: 0.3rem 0;
           }
         }
       }

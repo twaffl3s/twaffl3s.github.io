@@ -1,19 +1,9 @@
 @import 'colors';
 #content {
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   background: white;
   h1, h2, h3 {
     font-family: 'Karla', sans-serif;
-  }
-  h2 {
-    &:after {
-      width: 3.5em;
-      height: 1px;
-      background: #cecece;
-      content: " ";
-      display: block;
-      margin-top: 0.4em;
-    }
   }
   h3 {
     + p {

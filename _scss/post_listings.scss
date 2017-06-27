@@ -14,24 +14,13 @@
   overflow-y: auto;
   width: 100%;
   .post-preview {
-    padding: 1.25em 1em;
+    padding: 1.25rem 1rem;
     background: #FFF;
     border-bottom: 1px solid $blush_pink;
     a {
       color: #000;
       font-size: 0.9em;
       background: transparent;
-    }
-    h2 {
-      margin-top: 0;
-      &:after {
-        width: 3.5em;
-        height: 1px;
-        background: #cecece;
-        content: " ";
-        display: block;
-        margin-top: 0.4em;
-      }
     }
   }
 }
