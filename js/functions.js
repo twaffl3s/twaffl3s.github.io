@@ -11,8 +11,6 @@ window.addEventListener('scroll', function () {
 		document.body.className = '';
 	}
 });
-window.onload = function () {
-}
 document.addEventListener('DOMContentLoaded', function (e) {
 	var doc_body = e.srcElement.body.innerHTML;
 	if (doc_body.match(/tooltip/gi)) {
