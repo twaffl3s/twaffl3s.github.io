@@ -1,0 +1,33 @@
+@mixin heart($size, $color){
+  width: #{$size+'px'};
+  height: #{$size+'px'};
+  box-shadow: 
+    -#{($size*2)+'px'} 0px $color, 
+    -#{$size+'px'} 0px $color, 
+    #{$size+'px'} 0px $color, 
+    #{($size*2)+'px'} 0px $color, 
+    -#{($size*3)+'px'} #{$size+'px'} $color, 
+    -#{($size*2)+'px'} #{$size+'px'} $color, 
+    -#{$size+'px'} #{$size+'px'} $color, 
+    0px #{$size+'px'} $color, 
+    #{$size+'px'} #{$size+'px'} $color, 
+    #{($size*2)+'px'} #{$size+'px'} $color, 
+    #{($size*3)+'px'} #{$size+'px'} $color, 
+    -#{($size*3)+'px'} #{($size*2)+'px'} $color, 
+    -#{($size*2)+'px'} #{($size*2)+'px'} $color, 
+    -#{$size+'px'} #{($size*2)+'px'} $color, 
+    0px #{($size*2)+'px'} $color, 
+    #{$size+'px'} #{($size*2)+'px'} $color, 
+    #{($size*2)+'px'} #{($size*2)+'px'} $color, 
+    #{($size*3)+'px'} #{($size*2)+'px'} $color, 
+    -#{($size*2)+'px'} #{($size*3)+'px'} $color, 
+    -#{$size+'px'} #{($size*3)+'px'} $color, 
+    0px #{($size*3)+'px'} $color, 
+    #{$size + 'px'} #{($size*3)+'px'} $color, 
+    #{($size*2)+'px'} #{($size*3)+'px'} $color, 
+    -#{$size + 'px'} #{($size*4)+'px'} $color, 
+    0px #{($size*4)+'px'} $color, 
+    #{$size+'px'} #{($size*4)+'px'} $color, 
+    0px #{($size*5)+'px'} $color;
+
+}

@@ -14,6 +14,7 @@ This theme is property of Antoinette Janus and is not available for public use.
 /*** GLOBAL : GENERAL STYLE DEFAULTS ***/
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Serif);
 @import 'colors';
+@import 'heart';
 @keyframes disperse {
   0% {
     box-shadow: -6px 0px #000000, -3px 0px #000000, 3px 0px #000000, 6px 0px #000000, -9px 3px #000000, -6px 3px #000000, -3px 3px #000000, 0px 3px #000000, 3px 3px #000000, 6px 3px #000000, 9px 3px #000000, -9px 6px #000000, -6px 6px #000000, -3px 6px #000000, 0px 6px #000000, 3px 6px #000000, 6px 6px #000000, 9px 6px #000000, -6px 9px #000000, -3px 9px #000000, 0px 9px #000000, 3px 9px #000000, 6px 9px #000000, -3px 12px #000000, 0px 12px #000000, 3px 12px #000000, 0px 15px #000000;
@@ -236,12 +237,10 @@ main {
       height: 18px;
       width: 21px;
       > div {
+        @include heart(3, black);
         position: relative;
         display: block;
         margin: 0 12px 0 0;
-        width: 3px;
-        height: 3px;
-        box-shadow: -6px 0px #000000, -3px 0px #000000, 3px 0px #000000, 6px 0px #000000, -9px 3px #000000, -6px 3px #000000, -3px 3px #000000, 0px 3px #000000, 3px 3px #000000, 6px 3px #000000, 9px 3px #000000, -9px 6px #000000, -6px 6px #000000, -3px 6px #000000, 0px 6px #000000, 3px 6px #000000, 6px 6px #000000, 9px 6px #000000, -6px 9px #000000, -3px 9px #000000, 0px 9px #000000, 3px 9px #000000, 6px 9px #000000, -3px 12px #000000, 0px 12px #000000, 3px 12px #000000, 0px 15px #000000;
       }
       &:hover div {
         animation: disperse 0.2s 1 forwards;
