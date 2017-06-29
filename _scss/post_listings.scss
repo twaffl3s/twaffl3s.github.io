@@ -1,9 +1,28 @@
 @import 'colors';
+@import 'heart';
 .post-title {
   font-family: 'Karla', serif;
   text-decoration: none;
   color: black;
   font-weight: 700;
+  span {
+    &:before, &:after {
+      display: inline-block;
+      font-size: 0.9rem;
+      line-height: 0.4rem;
+      vertical-align: top;
+    }
+    &:before {
+      @include heart(2, $link_pink);
+      content: '';
+      margin: 0.5rem 0 0 1rem;
+
+    }
+    &:after {
+      content: 'UNREAD!';
+      margin: 0.7rem 0 0 0.6rem;
+    }
+  }
 }
 .post-list {
   margin: 0;

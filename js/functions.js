@@ -17,3 +17,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
 		$('.tooltip').gifify();
 	}
 });
+window.onload = function () {
+
+}
+window.onbeforeunload = function (e) {
+	e.preventDefault();
+};
