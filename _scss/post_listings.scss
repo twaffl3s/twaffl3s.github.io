@@ -47,5 +47,14 @@
         }
       }
     }
+    &:hover {
+      background: $blush_pink;
+      :visited {
+        :before, :after {
+          color: $blush_pink;
+          box-shadow: none;
+        }
+      }
+    }
   }
 }
