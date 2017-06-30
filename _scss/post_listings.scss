@@ -8,19 +8,20 @@
   span {
     &:before, &:after {
       display: inline-block;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       line-height: 0.4rem;
       vertical-align: top;
     }
     &:before {
-      @include heart(2, $link_pink);
-      content: '';
-      margin: 0.5rem 0 0 1rem;
-
+      // @include heart(2, $link_pink);
+      content: '♥ ';
+      margin: 0.8rem 0 0 0.8rem;
+      color: $link_pink;
+      font-size: 0.7rem;
     }
     &:after {
-      content: 'UNREAD!';
-      margin: 0.7rem 0 0 0.6rem;
+      content: 'UNREAD';
+      margin: 0.75rem 0 0 0.2rem;
     }
   }
 }
@@ -39,6 +40,12 @@
       color: #000;
       background: transparent;
       padding: 1.25rem 1.75rem;
+      &:visited {
+        :before, :after {
+          color: white;
+          box-shadow: none;
+        }
+      }
     }
   }
 }
