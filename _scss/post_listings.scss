@@ -49,6 +49,7 @@
     }
     &:hover {
       background: $blush_pink;
+      cursor: pointer;
       :visited {
         :before, :after {
           color: $blush_pink;
