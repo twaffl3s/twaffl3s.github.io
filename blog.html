@@ -1,19 +1,5 @@
 ---
-layout: default
-title: Home
-type: post-listing
+layout: post_listing
+title:  Blog
+genre: blog
 ---
-<ul class="post-list">
-{% for post in site.categories.blog %}
-    <li class="post-preview">
-        {% assign tab_index = forloop.index %}
-        <a href="{{ post.url | prepend: site.baseurl }}" tabindex="{{ tab_index |plus: 9 }}">
-            <h2 class="post-title">
-                {{ post.title }}
-            </h2>
-            <p class="post-meta">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
-            <p class="post-excerpt">{{ post.excerpt }}</p>
-        </a>
-    </li>
-{% endfor %}
-</ul>
