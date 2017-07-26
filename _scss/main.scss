@@ -128,7 +128,7 @@ nav {
     padding: 2px 4px;
     display: inline-block;
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
+    background-image: linear-gradient(to bottom, transparent 50%, $blush_pink 50%); 
     -webkit-transition: background-position .15s, color .25s; 
     -moz-transition: background-position .15s, color .25s; 
     transition: background-position .15s, color .25s;
@@ -220,7 +220,7 @@ main {
     color: #9b9b9b;
     display: inline-block;
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, #FFF 50%, $blush_pink 50%); 
+    background-image: linear-gradient(to bottom, transparent 50%, $blush_pink 50%); 
     -webkit-transition: background-position .15s, color .25s; 
     -moz-transition: background-position .15s, color .25s; 
     transition: background-position .15s, color .25s;
