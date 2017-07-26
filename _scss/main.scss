@@ -89,7 +89,9 @@ input[type="checkbox"]{
     }
     & ~ nav {
       width: 0%;
-      white-space: nowrap;
+      ul {
+        white-space: nowrap;
+      }
       #footer {
         #social-media, #made-cont {
           white-space: nowrap;
