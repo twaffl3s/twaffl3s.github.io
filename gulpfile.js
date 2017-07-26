@@ -17,7 +17,7 @@ var messages = {
 var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn(jekyll, ['build', '--watch'], { stdio: 'inherit' })
+    return cp.spawn(jekyll, ['build'], { stdio: 'inherit' })
         .on('close', done);
 });
 
