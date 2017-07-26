@@ -1,11 +1,11 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
-var prefix      = require('gulp-autoprefixer');
-var minifycss   = require('gulp-minify-css');
-var rename      = require('gulp-rename');
-var cp          = require('child_process');
-var scsslint    = require('gulp-scss-lint');
+var sass = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+var minifycss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var cp = require('child_process');
+var scsslint = require('gulp-scss-lint');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -17,7 +17,7 @@ var messages = {
 var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn(jekyll, ['build'], {stdio: 'inherit'})
+    return cp.spawn(jekyll, ['build'], { stdio: 'inherit' })
         .on('close', done);
 });
 
@@ -40,7 +40,7 @@ gulp.task('sass-main', function () {
         .pipe(rename('main.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('sass-resume', function () {
     return gulp.src('_scss/resume.scss')
@@ -50,7 +50,7 @@ gulp.task('sass-resume', function () {
         .pipe(rename('resume.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('sass-bio', function () {
     return gulp.src('_scss/bio.scss')
@@ -60,7 +60,7 @@ gulp.task('sass-bio', function () {
         .pipe(rename('bio.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('sass-post-lists', function () {
     return gulp.src('_scss/post_listings.scss')
@@ -70,7 +70,7 @@ gulp.task('sass-post-lists', function () {
         .pipe(rename('post_listings.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('sass-posts', function () {
     return gulp.src('_scss/posts.scss')
@@ -80,7 +80,7 @@ gulp.task('sass-posts', function () {
         .pipe(rename('posts.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('sass-mediaqueries', function () {
     return gulp.src('_scss/media_queries.scss')
@@ -90,7 +90,7 @@ gulp.task('sass-mediaqueries', function () {
         .pipe(rename('media_queries.min.css'))
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 /**
@@ -159,7 +159,7 @@ gulp.task('sass-mediaqueries', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-resume', 'sass-mediaqueries', 'sass-bio', 'sass-post-lists', 'sass-posts']);
-    gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', 'bio.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*'], ['jekyll-rebuild']);
     // gulp.watch(['images/*'], ['imagemin']),
     // gulp.watch(['js/*.js'], ['jekyll-build'])
 });
