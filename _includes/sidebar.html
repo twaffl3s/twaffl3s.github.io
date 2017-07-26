@@ -1,20 +1,25 @@
+<input id="nav-toggle" type="checkbox"/>
+<label for="nav-toggle" class="screen" tabindex="10"></label>
 <nav>
-  <p>Hello. My name is <a href="/bio" tabindex="1"><b>Antoinette Janus</b></a>. I'm a developer and designer based in Washington, D.C.</p>
-  <ul role="navigation">
-    <li>
-      <a data-linktext="Home" tabindex="2" {% if page.title == "Home" %}class="active"{% endif %} href="/">Home<span>&nbsp;»</span></a>
-    </li>
-    <li>
-      <a data-linktext="Resume" tabindex="3" {% if page.title == "Resume" %}class="active"{% endif %} href="/resume">Resume<span>&nbsp;»</span></a>
-    </li>
-    <li>
-      <a data-linktext="Bio" tabindex="4" {% if page.title == "Bio" %}class="active"{% endif %} href="/bio">Bio<span>&nbsp;»</span></a>
-    </li>
-    <li>
-      <a data-linktext="Blog" tabindex="5" {% if page.title == "Blog" %}class="active"{% endif %} href="/blog">Blog<span>&nbsp;»</span></a>
-    </li>
-    <li>
-      <a data-linktext="Works" tabindex="6" {% if page.title == "Works" %}class="active"{% endif %} href="/works">Works<span>&nbsp;»</span></a>
-    </li>
-  </ul>
+  <div id="nav-container">
+    <p>Hello. My name is <a href="/bio" tabindex="1"><b>Antoinette Janus</b></a>. I'm a developer and designer based in Washington, D.C.</p>
+    <ul role="navigation">
+      <li>
+        <a data-linktext="Home" tabindex="2" {% if page.title == "Home" %}class="active"{% endif %} href="/">Home<span>&nbsp;»</span></a>
+      </li>
+      <li>
+        <a data-linktext="Resume" tabindex="3" {% if page.title == "Resume" %}class="active"{% endif %} href="/resume">Resume<span>&nbsp;»</span></a>
+      </li>
+      <li>
+        <a data-linktext="Bio" tabindex="4" {% if page.title == "Bio" %}class="active"{% endif %} href="/bio">Bio<span>&nbsp;»</span></a>
+      </li>
+      <li>
+        <a data-linktext="Blog" tabindex="5" {% if page.title == "Blog" %}class="active"{% endif %} href="/blog">Blog<span>&nbsp;»</span></a>
+      </li>
+      <li>
+        <a data-linktext="Works" tabindex="6" {% if page.title == "Works" %}class="active"{% endif %} href="/works">Works<span>&nbsp;»</span></a>
+      </li>
+    </ul>
+  </div>
+  {% include footer.html %}
 </nav>
