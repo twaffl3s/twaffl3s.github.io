@@ -48,8 +48,8 @@
       }
     }
     &:hover, &:focus {
-      background: $blush_pink;
       a {
+        background: $blush_pink;
         cursor: pointer;
         &:visited {
           :before, :after {
