@@ -196,6 +196,9 @@ nav {
     }
   }
 }
+#gifify-tooltip {
+  z-index: 10000;
+}
 main {
   width: 80%;
   position: absolute;
@@ -206,6 +209,7 @@ main {
   background: $blush_pink;
   overflow: hidden;
   transition: 0.2s;
+  z-index: 2;
   > article, > #resume, .post-list {
     overflow-y: auto;
     height: 100%;
