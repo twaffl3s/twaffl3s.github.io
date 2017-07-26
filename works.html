@@ -1,18 +1,5 @@
 ---
-layout: default
-title: Home
-type: post-listing
+layout: post_listing
+title:  Works
+genre: works
 ---
-<ul class="post-list">
-{% for post in site.categories['works'] %}
-    <li class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <h2 class="post-title">
-                {{ post.title }}
-            </h2>
-            <p class="post-meta">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
-            <p class="post-excerpt">{{ post.excerpt }}</p>
-        </a>
-    </li>
-{% endfor %}
-</ul>
