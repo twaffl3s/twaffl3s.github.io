@@ -13,7 +13,6 @@
       vertical-align: top;
     }
     &:before {
-      // @include heart(2, $link_pink);
       content: '♥ ';
       margin: 0.8rem 0 0 0.8rem;
       color: $link_pink;
