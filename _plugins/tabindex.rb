@@ -7,4 +7,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::AssetFilter)
+Liquid::Template.register_filter(Jekyll::TabIndexFilter)
