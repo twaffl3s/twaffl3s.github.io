@@ -86,15 +86,6 @@ nav {
   ul {
     margin: 0 -1.25rem;
     padding: 0;
-    &:after {
-      content:""; 
-      background: black; 
-      position: absolute; 
-      top: 0; 
-      right: 0;
-      height: 5em; 
-      width: 9px;
-    }
     li {
       list-style-type: none;
       padding: 0;
