@@ -69,6 +69,9 @@ input[type="checkbox"]{
     height: 2rem;
     background: black;
     z-index: 1000;
+    &:hover {
+      cursor: pointer;
+    }
     &:before {
       content: '«';
       color: $blush_pink;
