@@ -1,0 +1,75 @@
+# - role: 
+#   company: 
+#   date:
+#     start: 
+#     end: 
+#   responsibilities:
+#     - 
+#   technologies:
+#     - 
+
+- role: Engineer
+  company: PBS Kids
+  date:
+    start: MAY 2017
+  responsibilities:
+    - Created sites with Craft CMS
+
+- role: Software Engineer
+  company: FastOrientation
+  date:
+    start: APR 2016
+    end: FEB 2017
+  responsibilities:
+    - Ported features from Angular 1 to Angular 2
+    - Built out Angular 1 features with semantic HTML, JavaScript, and CSS
+    - Implemented features end to end
+    - Ensured every feature has full test coverage using Jasmine
+    - Worked with lead designer to ensure quality product designs and brand continuity
+    - Integrated Angular 2 into build chain through rake task
+  technologies:
+    - jQuery
+    - JavaScript (ES5/ES6)
+    - Angular 1/2
+    - CoffeeScript
+    - HTML, CSS/SCSS
+    - Rails/Ruby
+    - TeamCity
+    - JasmineJS
+
+- role: Developer, Designer
+  company: CEB
+  date:
+    start: AUG 2014
+    end: APR 2016
+  responsibilities:
+    - Every project was supported from IE8+
+    - Built and updated client sites based on mock ups through JavaScript, HTML and CSS/SCSS
+    - Interacted with clients and team regularly about projects
+    - Main JavaScript developer on team
+    - Modified responsive code and converted pages to be responsive across multiple devices
+    - Lead CSS conversion, custom JavaScript implementation, and debugging throughout CMS transition
+  technologies:
+    - JavaScript/jQuery
+    - Photoshop/Illustrator
+    - HTML
+    - SCSS/CSS
+    - TeamShare/Adobe Experience Manager
+
+- role: Designer
+  company: Sustainable Campus
+  date:
+    start: OCT 2012
+    end: MAY 2014
+  responsibilities:
+    - Logo redesign for Office of Student Sustainability rebrand
+    - Informational poster designs for events and environmental holidays
+    - Design of informational booklet on living green in Tallahassee
+    - Create an interactive room on how to live eco-friendly on campus
+    - Multiple photo modification for a student lead, school funded project
+  technologies:
+    - JavaScript/jQuery
+    - Photoshop
+    - HTML
+    - CSS
+    - Windows/OSX

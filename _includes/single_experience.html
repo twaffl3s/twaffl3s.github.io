@@ -1,0 +1,23 @@
+<div class="exp">
+  {% assign exp = include.exp %}
+  <h4>{{exp.role}}, {{exp.company}}<span class="print"> | {{exp.date.start}} - {% if exp.date.end %}{{exp.date.end}}{% else %} PRESENT{% endif %}</span></h4>
+  <div class="resp">
+    <ul>
+      {% for resp in exp.responsibilities %}
+        <li>{{resp}}</li>
+      {% endfor %}
+      {% if tech %}
+        <li class="techs">
+          {% for tech in exp.technologies %}
+            {% if forloop.last %}
+              {{ tech }}
+            {% else %}
+              {{ tech }}, 
+            {% endif %}
+          {% endfor %}
+        </li>
+      {% endif %}
+    </ul>
+    <span class="screen">{{exp.date.start}} - {% if exp.date.end %}{{exp.date.end}} {% else %} PRESENT{% endif %}</span>
+  </div>
+</div>

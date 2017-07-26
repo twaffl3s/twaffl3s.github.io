@@ -9,59 +9,9 @@ type: resume
 		<h3> Developer/Designer <span class="screen">|</span><span class="printable">based in</span> Washington, D.C.<span class="screen"> | </span><a href="mailto:acj.gfx@gmail.com">E-mail</a><span class="printable">acj.gfx@gmail.com | (703) 470-7607</span></h3>
 		<h3 class="res-cat"><b>Experience</b></h3>
 		<div class="row">
-			<div class="exp">
-				<h4>Engineer, PBSKids<span class="print"> | MAY 2017 - PRESENT</span></h4>
-				<div class="resp">
-					<ul>
-						<li>Created sites with Craft CMS</li>
-					</ul>
-					<span class="screen">MAY 2017 - PRESENT</span>
-				</div>
-			</div>
-      <div class="exp">
-				<h4>Software Engineer, FastOrientation<span class="print"> | APR 2016 - FEB 2017</span></h4>
-				<div class="resp">
-					<ul>
-						<li>Ported features from Angular 1 to Angular 2</li>
-						<li>Built out Angular 1 features with semantic HTML, JavaScript, and CSS</li>
-						<li>Implemented features end to end</li>
-            <li>Ensured every feature has full test coverage using Jasmine</li>
-						<li>Worked with lead designer to ensure quality product designs and brand continuity</li>
-						<li>Integrated Angular 2 into build chain through rake task</li>
-						<li class="techs">Technologies Used: jQuery, JavaScript (ES5/ES6), Angular 1/2, CoffeeScript, HTML, CSS/SCSS, Rails/Ruby, TeamCity, JasmineJS</li>
-					</ul>
-					<span class="screen">APR 2016 - FEB 2017</span>
-				</div>
-			</div>
-			<div class="exp">
-				<h4>Web Developer & Designer, CEB<span class="print"> | AUG 2014 — APR 2016</span></h4>
-				<div class="resp">
-					<ul>
-						<li><i>Every project was supported from IE8+</i></li>
-						<li>Built and updated client sites based on mock ups through JavaScript, HTML and CSS/SCSS</li>
-						<li>Interacted with clients and team regularly about projects</li>
-						<li>Main JavaScript developer on team</li>
-						<li>Modified responsive code and converted pages to be responsive across multiple devices</li>
-						<li>Lead CSS conversion, custom JavaScript implementation, and debugging throughout CMS transition</li>
-						<li class="techs">Technologies Used: JavaScript/jQuery, Photoshop/Illustrator, HTML, SCSS/CSS, TeamShare/Adobe Experience Manager</li>
-					</ul>
-					<span class="screen">AUG 2014 — APR 2016</span>
-				</div>
-			</div>
-			<div class="exp">
-				<h4>Designer, Sustainable Campus<span class="print"> | OCT 2012 — MAY 2014</span></h4>
-				<div class="resp">
-					<ul>
-						<li>Provided logo redesign for rebranding of Office of Student Sustainability</li>
-						<li>Designed informational posters for events and environmental holidays</li>
-						<li>Designed an informational booklet on living green in Tallahassee</li>
-						<li>Created an interactive room on how to live eco-friendly on campus</li>
-						<li>Modified photos for a student lead, school funded project</li>
-						<li class="techs">Technologies Used: jQuery, vanilla JavaScript, Photoshop, HTML, CSS, Windows, OSX</li>
-					</ul>
-					<span class="screen">OCT 2012 — MAY 2014</span>
-				</div>
-			</div>
+			{% for exp in site.data.experiences %}
+				{% include single_experience.html exp=exp %}
+			{% endfor %}
 		</div>
 		<h3 class="res-cat"><b>Education</b></h3>
 		<div class="row">
