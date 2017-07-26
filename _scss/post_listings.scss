@@ -39,6 +39,9 @@
       color: #000;
       background: transparent;
       padding: 1.25rem 1.75rem;
+      &:focus {
+        background: $blush_pink;
+      }
       &:visited {
         :before, :after {
           color: white;
@@ -46,7 +49,7 @@
         }
       }
     }
-    &:hover, &:focus {
+    &:hover {
       a {
         background: $blush_pink;
         cursor: pointer;

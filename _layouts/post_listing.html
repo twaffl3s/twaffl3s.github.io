@@ -4,8 +4,7 @@ type: post-listing
 ---
 <ul class="post-list">
 {% for post in site.categories[page.genre] %}
-  {% assign tab_index = forloop.index %}
-    <li class="post-preview" tabindex="{{ tab_index |plus: 9 }}">
+    <li class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">
                 {{ post.title }}
