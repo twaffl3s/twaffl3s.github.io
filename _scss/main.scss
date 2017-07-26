@@ -65,6 +65,7 @@ input[type="checkbox"]{
     display: block;
     position: absolute;
     left: 20%;
+    transition: 0.2s;
     width: 1.4rem;
     height: 2rem;
     background: black;
@@ -88,6 +89,7 @@ input[type="checkbox"]{
     }
     & ~ nav {
       width: 0%;
+      white-space: nowrap;
       #footer {
         #social-media, #made-cont {
           white-space: nowrap;
