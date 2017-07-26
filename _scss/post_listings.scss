@@ -46,8 +46,8 @@
         }
       }
     }
-    &:hover {
-      a, :focus {
+    &:hover, &:focus {
+      a {
         background: $blush_pink;
         cursor: pointer;
         &:visited {
