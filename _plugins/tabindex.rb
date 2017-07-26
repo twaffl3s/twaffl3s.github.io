@@ -1,5 +1,5 @@
 module Jekyll
-  module TabIndexFilter
+  module TabIndex
     def tab_index(post_index)
       # we add 9 because of the links in the nav
       post_index + 9
@@ -7,4 +7,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::TabIndexFilter)
+Liquid::Template.register_filter(Jekyll::TabIndex)
