@@ -1,172 +1,174 @@
 @import 'colors';
 @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
-    .mobile-only {
-      display: block;
-    }
-    .desktop-only {
-      display: none;
-    }
-    #posts > .post {
-      position: relative;
-    }
-    nav {
-      background: rgba(0,0,0,0.5);
-      width: 100%;
-      z-index: 3;
-      padding: 5% 7%;
-      box-sizing: border-box;
-    }
-    main {
-      width: 100%;
-      z-index: 2;
-    }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  nav {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 3;
+    padding: 5% 7%;
+  }
+  main {
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)  { 
-    .mobile-only {
-      display: block;
-    }
-    .desktop-only {
-      display: none;
-    }
-    #posts > .post {
-      position: relative;
-    }
-    nav {
-      background: rgba(0,0,0,0.5);
-      width: 100%;
-      z-index: 3;
-      padding: 5% 7%;
-      box-sizing: border-box;
-    }
-    main {
-      width: 100%;
-      z-index: 2;
-    }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  nav {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 3;
+    padding: 5% 7%;
+  }
+  main {
+    width: 100%;
+    z-index: 2;
+  }
 }
 @media only screen and (max-width: 1400px){
-  #footer > div {
-    clear: both;
-  }
-  #made-cont {
-    float: left;
+  #footer {
+    > div {
+      clear: both;
+    }
+    #made-cont {
+      float: left;
+    }
   }
 }
 @media only screen and (max-width: 960px){
-    main {
-      padding-bottom: 50px;
-      .post-list .post-preview a {
-        padding: 1.25rem;
-      }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  main {
+    padding-bottom: 50px;
+    .post-list .post-preview a {
+      padding: 1.25rem;
     }
-    #footer > div {
+  }
+  #footer {
+    > div {
       clear: none;
     }
     #made-cont {
       float: right;
+      margin: 0;
     }
-    .scrolling nav p {
-      display: none;
-    }
-    nav {
-      background: #f8cbcb;
-      width: 100%;
-      z-index: 3;
-      padding: 0.7rem 1rem;
-      box-sizing: border-box;
-      height: auto;
-      border-bottom: 1px solid #000;
-      border-right: 0;
-      position: relative;
-      margin-top: -2px;
-      .scrolling & {
-        position: fixed;
-        top: 0;
-      }
-      ul {
-        padding: 0;
-        margin: 0;
-        &:after{
-          height: 100%;
-        }
-        li {
-          display: inline-block;
-          padding: 0 0.5rem;
-          background: transparent;
-          &:first-child{
-            padding-left: 0;
-          }
-          a {
-            font-size: 1rem;
-            transition: none;
-            padding: 0;
-            background-image: none;
-            &:before, &:after {
-              content: none;
-            }
-            span {
-              display: none;
-            }
-          }
-        }
-      }
-      p {
-        padding: 0;
-        margin: 0 0 0.3rem;
-        font-size: 1rem;
-      }
-    }
-    main .post-title {
-      font-size: 1.25rem;
-      margin-bottom: 0;
-      margin-top: 0.3rem;
-    }
-    main .post-excerpt {
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem;
-    }
-    main {
-      width: 100%;
-      z-index: 2;
-      height: auto;
-      position: relative;
-      clear: both;
-    }
-    #footer {
-      width: 100%;
+  }
+  nav {
+    background: #f8cbcb;
+    width: 100%;
+    z-index: 3;
+    padding: 0.7rem 1rem;
+    height: auto;
+    border-bottom: 1px solid #000;
+    border-right: 0;
+    position: relative;
+    margin-top: -2px;
+    .scrolling & {
       position: fixed;
-      bottom: 0;
-      left: 0;
-      font-family: 'Karla', sans-serif;
-      z-index: 2;
-      height: 3em;
-      background: #f9e4e4;
-      border-top: 1px solid #f8cbcb;
-    }
-    #posts {
-      overflow-y: auto;
-      padding-bottom: 3.5em;
-    }
-    #footer {
-      #social-media, #made-cont {
-        clear: none;
-      }
-      #social-media {
-        margin-top: -0.25rem;
-        float: left;
-      }
-      #made-cont {
-        float: right;
-      }
-    }
-    .row .resp {
-      display: table;
-      ul {
-        display: table-footer-group;
-      }
+      top: 0;
       p {
-        display: table-header-group;
-        line-height: 5vmin;
+        display: none;
       }
     }
+    ul {
+      padding: 0;
+      margin: 0;
+      &:after{
+        height: 100%;
+      }
+      li {
+        display: inline-block;
+        padding: 0 0.5rem;
+        background: transparent;
+        &:first-child{
+          padding-left: 0;
+        }
+        a {
+          font-size: 1rem;
+          transition: none;
+          padding: 0;
+          background-image: none;
+          &:before, &:after {
+            content: none;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+    p {
+      padding: 0;
+      margin: 0 0 0.3rem;
+      font-size: 1rem;
+    }
+  }
+  main .post-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-top: 0.3rem;
+  }
+  main .post-excerpt {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  main {
+    width: 100%;
+    z-index: 2;
+    height: auto;
+    position: relative;
+    clear: both;
+  }
+  #footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: 'Karla', sans-serif;
+    z-index: 2;
+    height: 3em;
+    background: #f9e4e4;
+    border-top: 1px solid #f8cbcb;
+  }
+  #posts {
+    overflow-y: auto;
+    padding-bottom: 3.5em;
+  }
+  #footer {
+    #social-media, #made-cont {
+      clear: none;
+    }
+    #social-media {
+      margin-top: -0.25rem;
+      float: left;
+    }
+    #made-cont {
+      float: right;
+    }
+  }
+  .row .resp {
+    display: table;
+    ul {
+      display: table-footer-group;
+    }
+    p {
+      display: table-header-group;
+      line-height: 5vmin;
+    }
+  }
 }
