@@ -55,6 +55,20 @@
   }
   main {
     padding-bottom: 50px;
+    width: 100%;
+    z-index: 2;
+    height: auto;
+    position: relative;
+    clear: both;
+    .post-excerpt {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .post-title {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+      margin-top: 0.3rem;
+    }
     .post-list .post-preview a {
       padding: 1.25rem;
     }
@@ -117,22 +131,6 @@
       margin: 0 0 0.3rem;
       font-size: 1rem;
     }
-  }
-  main .post-title {
-    font-size: 1.25rem;
-    margin-bottom: 0;
-    margin-top: 0.3rem;
-  }
-  main .post-excerpt {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-  main {
-    width: 100%;
-    z-index: 2;
-    height: auto;
-    position: relative;
-    clear: both;
   }
   #footer {
     width: 100%;
