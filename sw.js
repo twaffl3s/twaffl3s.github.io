@@ -23,7 +23,8 @@ var assetsToCache = [
   '/css/post_listings.min.css',
   '/css/post.min.css',
   '/css/resume.min.css',
-  '/js/functions.js'
+  '/js/functions.js',
+  '/images/favicon.png'
 ];
 
 self.addEventListener('install', function (event) {
