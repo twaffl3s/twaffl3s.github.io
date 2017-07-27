@@ -17,6 +17,22 @@
       "src": "https://acjanus.co/images/favicon.png",
       "type": "image/png",
       "sizes": "80x80"
+    },{
+      "src": "https://acjanus.co/images/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }, {
+      "src": "https://acjanus.co/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    }, {
+      "src": "https://acjanus.co/images/ms-touch-icon-144x144-precomposed.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }, {
+      "src": "https://acjanus.co/images/chrome-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ]
 }
