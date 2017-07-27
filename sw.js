@@ -27,6 +27,22 @@ var assetsToCache = [
   '/images/favicon.png'
 ];
 
+// Fix for Service Worker error of fetch events that have already been responded to
+// https://github.com/w3c/ServiceWorker/issues/836
+
+function Helper(event) {
+  var promises = [], count = 0, resolve;
+  this.response = new Promise(r => resolve = r);
+  this.add = function (p) {
+    p.then(
+      r => resolve(r),
+      () => {
+        if (++count === promises.length)
+          resolve(fetch(event.request));
+      });
+  };
+}
+
 self.addEventListener('install', function (event) {
   // waitUntil() ensures that the Service Worker will not
   // install until the code inside has successfully occurred
@@ -59,11 +75,14 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
   // Get current path
   var requestUrl = new URL(event.request.url);
-
+  if (!event.helper) {
+    event.helper = new Helper(event);
+    event.respondWith(event.helper.response);
+  }
   // Save all resources on origin path only
   if (requestUrl.origin === location.origin) {
     if (requestUrl.pathname === '/') {
-      event.respondWith(
+      event.helper.add(new Promise(function (resolve, reject) {
         // Open the cache created when install
         caches.open(cacheName).then(function (cache) {
           // Go to the network to ask for that resource
@@ -78,13 +97,35 @@ self.addEventListener('fetch', function (event) {
             return cache.match(event.request);
           })
         })
-      );
+      }));
+      // event.respondWith(
+      //   // Open the cache created when install
+      //   caches.open(cacheName).then(function (cache) {
+      //     // Go to the network to ask for that resource
+      //     return fetch(event.request).then(function (networkResponse) {
+      //       // Add a copy of the response to the cache (updating the old version)
+      //       cache.put(event.request, networkResponse.clone());
+      //       // Respond with it
+      //       return networkResponse;
+      //     }).catch(function () {
+      //       // If there is no internet connection, try to match the request
+      //       // to some of our cached resources
+      //       return cache.match(event.request);
+      //     })
+      //   })
+      // );
     }
   }
 
-  event.respondWith(
-    caches.match(event.request).then(function (response) {
+  event.helper.add(new Promise(function (resolve, reject) {
+    self.caches.match(event.request).then(function (response) {
       return response || fetch(event.request);
-    })
-  );
+    });
+  }));
+
+  // event.respondWith(
+  //   caches.match(event.request).then(function (response) {
+  //     return response || fetch(event.request);
+  //   })
+  // );
 });
