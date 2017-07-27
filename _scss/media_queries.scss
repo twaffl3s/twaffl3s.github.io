@@ -53,15 +53,11 @@
   }
 }
 @media only screen and (max-width: 960px){
-    .scrolling nav {
-      position: fixed;
-      top: 0;
-    }
     main {
       padding-bottom: 50px;
-    }
-    main > .post {
-      padding: 1em 1.5em 50px;
+      > .post-preview a {
+        padding: 1.25rem;
+      }
     }
     #footer > div {
       clear: none;
@@ -71,13 +67,6 @@
     }
     .scrolling nav p {
       display: none;
-    }
-    main > .post {
-      position: relative;
-    }
-    main {
-      background: $blush_pink;
-      position: relative;
     }
     nav {
       background: #f8cbcb;
@@ -90,6 +79,10 @@
       border-right: 0;
       position: relative;
       margin-top: -2px;
+      .scrolling & {
+        position: fixed;
+        top: 0;
+      }
       ul {
         padding: 0;
         margin: 0;
@@ -106,6 +99,8 @@
           a {
             font-size: 1rem;
             transition: none;
+            padding: 0;
+            background-image: none;
             &:before, &:after {
               content: none;
             }
