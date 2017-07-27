@@ -97,6 +97,9 @@ input[type="checkbox"]{
         #social-media, #made-cont {
           white-space: nowrap;
         }
+        .social-media-icons-text {
+          display: none;
+        }
       }
     }
     & ~ main {
