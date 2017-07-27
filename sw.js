@@ -21,7 +21,7 @@ var assetsToCache = [
   '/css/main.min.css',
   '/css/media_queries.min.css',
   '/css/post_listings.min.css',
-  '/css/post.min.css',
+  '/css/posts.min.css',
   '/css/resume.min.css',
   '/js/functions.js',
   '/images/favicon.png'
