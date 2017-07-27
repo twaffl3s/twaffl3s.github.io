@@ -5,19 +5,19 @@
     <p>Hello. My name is <a href="/bio" tabindex="1"><b>Antoinette Janus</b></a>. I'm a developer and designer based in Washington, D.C.</p>
     <ul role="navigation">
       <li>
-        <a data-linktext="Home" tabindex="2" {% if page.title == "Home" %}class="active"{% endif %} href="/">Home<span>&nbsp;»</span></a>
+        <a data-linktext="Home" name="Go To Home." tabindex="2" {% if page.title == "Home" %}class="active"{% endif %} href="/">Home<span>&nbsp;»</span></a>
       </li>
       <li>
-        <a data-linktext="Resume" tabindex="3" {% if page.title == "Resume" %}class="active"{% endif %} href="/resume">Resume<span>&nbsp;»</span></a>
+        <a data-linktext="Resume" name="Go To Antoinette's Resume." tabindex="3" {% if page.title == "Resume" %}class="active"{% endif %} href="/resume">Resume<span>&nbsp;»</span></a>
       </li>
       <li>
-        <a data-linktext="Bio" tabindex="4" {% if page.title == "Bio" %}class="active"{% endif %} href="/bio">Bio<span>&nbsp;»</span></a>
+        <a data-linktext="Bio" name="Go To Antoinette's Bio." tabindex="4" {% if page.title == "Bio" %}class="active"{% endif %} href="/bio">Bio<span>&nbsp;»</span></a>
       </li>
       <li>
-        <a data-linktext="Blog" tabindex="5" {% if page.title == "Blog" %}class="active"{% endif %} href="/blog">Blog<span>&nbsp;»</span></a>
+        <a data-linktext="Blog" name="Go To Blog." tabindex="5" {% if page.title == "Blog" %}class="active"{% endif %} href="/blog">Blog<span>&nbsp;»</span></a>
       </li>
       <li>
-        <a data-linktext="Works" tabindex="6" {% if page.title == "Works" %}class="active"{% endif %} href="/works">Works<span>&nbsp;»</span></a>
+        <a data-linktext="Works" name="Go To Works." tabindex="6" {% if page.title == "Works" %}class="active"{% endif %} href="/works">Works<span>&nbsp;»</span></a>
       </li>
     </ul>
   </div>
