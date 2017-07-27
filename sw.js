@@ -5,6 +5,17 @@ var cacheName = '1.0';
 
 // Assesto catche
 var assetsToCache = [
+  '/fonts/karla_reg_latin.woff2',
+  '/fonts/karla_reg_latin_extended.woff2',
+  '/fonts/karla_bold_latin.woff2',
+  '/fonts/karla_bold_latin_extended.woff2',
+  '/fonts/notoserif_reg_cyrillic.woff2',
+  '/fonts/notoserif_reg_cyrillic_extended.woff2',
+  '/fonts/notoserif_reg_greek.woff2',
+  '/fonts/notoserif_reg_greek_extended.woff2',
+  '/fonts/notoserif_reg_vietnamese.woff2',
+  '/fonts/notoserif_reg_latin.woff2',
+  '/fonts/notoserif_reg_latin_extended.woff2',
   '/css/bio.min.css',
   '/css/gifify.min.css',
   '/css/main.min.css',
