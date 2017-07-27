@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
 		$('.tooltip').gifify();
 	}
 });
-window.onload = function () {
 
+// registering service worker
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('/sw.js')
+		.then(function () { console.log("Service Worker Registered"); });
 }
-window.onbeforeunload = function (e) {
-	e.preventDefault();
-};
