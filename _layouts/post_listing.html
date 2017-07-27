@@ -5,7 +5,7 @@ type: post-listing
 <ul class="post-list">
 {% for post in site.categories[page.genre] %}
     <li class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}" tabindex="{{forloop.index|plus: 11}}">
+        <a href="{{ post.url | prepend: site.baseurl }}" name="{{post.title}}">
             <h2 class="post-title">
                 {{ post.title }}
             </h2>
