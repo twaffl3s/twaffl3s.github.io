@@ -39,8 +39,10 @@ html, body {
   width: 100%;
 }
 h1, h2 {
-  margin-top: 0;
+  margin: 0;
   font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+  padding-bottom: 0.8rem;
   &:after {
     width: 4.4rem;
     height: 1px;
