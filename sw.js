@@ -67,7 +67,7 @@ self.addEventListener('activate', function (event) {
     caches.keys().then(function (cache_names) {
       return Promise.all(
         cache_names.map(function (param_cache_name) {
-          if (cache_white_list.indexOf(cache_name) === -1) {
+          if (cache_white_list.indexOf(param_cache_name) === -1) {
             return caches.delete(param_cache_name);
           }
         })
