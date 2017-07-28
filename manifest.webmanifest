@@ -21,6 +21,10 @@
       "src": "https://acjanus.co/images/icon-128x128.png",
       "type": "image/png",
       "sizes": "128x128"
+    }, {  
+      "src": "https://acjanus.co/images/icon-512x512.png",  
+      "sizes": "512x512",  
+      "type": "image/png"  
     }, {
       "src": "https://acjanus.co/images/apple-touch-icon.png",
       "type": "image/png",
