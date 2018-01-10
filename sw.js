@@ -65,7 +65,6 @@ self.addEventListener('activate', function (event) {
   var cache_white_list = ['acjanus-1.0'];
   event.waitUntil(
     caches.keys().then(function (cache_names) {
-      console.log('this works')
       return Promise.all(
         cache_names.map(function (param_cache_name) {
           if (cache_white_list.indexOf(param_cache_name) === -1) {
