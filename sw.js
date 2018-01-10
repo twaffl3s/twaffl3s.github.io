@@ -62,6 +62,7 @@ self.addEventListener('fetch', function (event) {
 });
 
 self.addEventListener('load', function(event) {
+  console.log('this works')
   const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
       // [::1] is the IPv6 localhost address.
