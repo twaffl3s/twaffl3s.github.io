@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Art of Printable Sites"
-permalink: /gifify/
+permalink: /printable-site/
 date:   '2017-06-02'
 categories: home blog
 excerpt: "Currently, a typo in a white page means a trip to the designer, who navigates what feels like an impossible, expensive graphic design program. With printable websites, content owners can edit white pages in any web-based method, including Content Management Systems like WordPress or Craft."
