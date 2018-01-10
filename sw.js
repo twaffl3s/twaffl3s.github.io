@@ -61,6 +61,24 @@ self.addEventListener('fetch', function (event) {
   )
 });
 
+self.addEventListener('load', function(event) {
+  const isLocalhost = Boolean(
+    window.location.hostname === 'localhost' ||
+      // [::1] is the IPv6 localhost address.
+      window.location.hostname === '[::1]' ||
+      // 127.0.0.1/8 is considered localhost for IPv4.
+      window.location.hostname.match(
+        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+      )
+  );
+  if (!isLocalhost) {
+    // Is not local host. Just register service worker
+    if(navigator.onLine){
+      localStorage.clear();
+    }
+  }
+})
+
 self.addEventListener('activate', function (event) {
   var cache_white_list = ['acjanus-1.0'];
   event.waitUntil(
