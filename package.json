@@ -1,5 +1,5 @@
 {
-  "name": "twaffl3s.github.io",
+  "name": "internette.github.io",
   "version": "1.0.0",
   "description": "Welcome to my, Antoinette's, github repo for my portfolio. Here, you can see everything to do with my site.",
   "main": "gulpfile.js",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twaffl3s/twaffl3s.github.io.git"
+    "url": "git+https://github.com/internette/internette.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/twaffl3s/twaffl3s.github.io/issues"
+    "url": "https://github.com/internette/internette.github.io/issues"
   },
-  "homepage": "https://github.com/twaffl3s/twaffl3s.github.io#readme"
+  "homepage": "https://github.com/internette/internette.github.io#readme"
 }
