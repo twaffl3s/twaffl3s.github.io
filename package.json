@@ -19,7 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "jekyll serve",
-    "build": "jekyll build"
+    "build": "jekyll build",
+    "compile-scss": "node ./build_scripts/scss.js"
   },
   "repository": {
     "type": "git",
