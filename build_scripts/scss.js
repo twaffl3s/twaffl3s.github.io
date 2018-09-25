@@ -1,16 +1,16 @@
 const execSync = require('child_process').execSync;
 const fs = require('fs');
-const path = require('path');
+const join = require('path').join;
 const args = require('process').argv.filter((arg)=>{ 
   if (arg.indexOf('--') >= 0) return arg;
 }).map((arg)=> {
   return arg.replace('--', '');
 });
-const scss_folder = path.join(__dirname + '/../scss');
+const scss_folder = join(__dirname + '/../scss');
 
 console.log('**************************\nCompiling SCSS');
 fs.readdirSync(scss_folder).forEach((file) => {
-  if(fs.statSync(path.join(scss_folder, file)).isFile()){
+  if(fs.statSync(join(scss_folder, file)).isFile()){
     console.log(`Compiling: ${file}`);
     let output = file.replace('scss', 'css');
     let command = `./node_modules/.bin/node-sass`;
