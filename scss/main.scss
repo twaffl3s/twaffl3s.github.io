@@ -13,9 +13,9 @@ This theme is property of Antoinette Janus and is not available for public use.
 
 /*** GLOBAL : GENERAL STYLE DEFAULTS ***/
 // @import url(https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Serif);
-@import 'fonts';
-@import 'colors';
-@import 'heart';
+@import 'partials/fonts';
+@import 'partials/colors';
+@import 'partials/heart';
 @keyframes disperse {
   0% {
     box-shadow: -6px 0px #000000, -3px 0px #000000, 3px 0px #000000, 6px 0px #000000, -9px 3px #000000, -6px 3px #000000, -3px 3px #000000, 0px 3px #000000, 3px 3px #000000, 6px 3px #000000, 9px 3px #000000, -9px 6px #000000, -6px 6px #000000, -3px 6px #000000, 0px 6px #000000, 3px 6px #000000, 6px 6px #000000, 9px 6px #000000, -6px 9px #000000, -3px 9px #000000, 0px 9px #000000, 3px 9px #000000, 6px 9px #000000, -3px 12px #000000, 0px 12px #000000, 3px 12px #000000, 0px 15px #000000;
