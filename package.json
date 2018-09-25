@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Welcome to my, Antoinette's, github repo for my portfolio. Here, you can see everything to do with my site.",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "child_process": "^1.0.2",
