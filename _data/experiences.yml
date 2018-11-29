@@ -13,7 +13,13 @@
   date:
     start: MAY 2017
   responsibilities:
-    - Created sites with Craft CMS
+    - Created producer sites with Craft CMS
+    - Debugged JavaScript-based games
+    - Constructed and converted front-end build systems
+    - Implemented branded JavaScript-based game-building tools, including logging panel
+    - Lead development across multiple projects
+    - Built out producer-consumed internal tools with cutting-edge technology
+    - Regularly implemented and maintained documentation
 
 - role: Software Engineer
   company: FastOrientation
@@ -23,8 +29,8 @@
   responsibilities:
     - Ported features from Angular 1 to Angular 2
     - Built out Angular 1 features with semantic HTML, JavaScript, and CSS
-    - Implemented features end to end
-    - Ensured every feature has full test coverage using Jasmine
+    - Implemented features end to end (frontend and backend)
+    - Ensured every feature had full test coverage using Jasmine
     - Worked with lead designer to ensure quality product designs and brand continuity
     - Integrated Angular 2 into build chain through rake task
   technologies:
