@@ -13,13 +13,15 @@
   date:
     start: MAY 2017
   responsibilities:
-    - Created producer sites with Craft CMS
+    - Created producer sites with Craft CMS using any combination of Twig, PHP, and Vue
     - Debugged JavaScript-based games
     - Constructed and converted front-end build systems
     - Implemented branded JavaScript-based game-building tools, including logging panel
     - Lead development across multiple projects
     - Built out producer-consumed internal tools with cutting-edge technology
     - Regularly implemented and maintained documentation
+    - Worked on expanding pre-existing APIs and implementing new endpoints in PHP
+    - Worked on implementing GraphQL for pre-existing PHP-based APIs
 
 - role: Software Engineer
   company: FastOrientation
