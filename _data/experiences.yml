@@ -8,7 +8,7 @@
 #   technologies:
 #     - 
 
-- role: Engineer
+- role: Software Engineer
   company: PBS Kids
   date:
     start: MAY 2017
@@ -20,8 +20,17 @@
     - Lead development across multiple projects
     - Built out producer-consumed internal tools with cutting-edge technology
     - Regularly implemented and maintained documentation
-    - Worked on expanding pre-existing APIs and implementing new endpoints in PHP
-    - Worked on implementing GraphQL for pre-existing PHP-based APIs
+    - Expanded pre-existing APIs and implementing new endpoints in PHP
+    - Implemented GraphQL for pre-existing PHP-based APIs and Elastic Search technologies
+  technologies:
+    - JavaScript
+    - GraphQL
+    - PHP
+    - CraftCMS
+    - HTML
+    - JavaScript Frameworks (Vue)
+    - HTML Frameworks (Pug, Twig, Handlebars)
+    - CSS/SCSS
 
 - role: Software Engineer
   company: FastOrientation
@@ -38,7 +47,7 @@
   technologies:
     - jQuery
     - JavaScript (ES5/ES6)
-    - Angular 1/2
+    - Angular 1,2
     - CoffeeScript
     - HTML, CSS/SCSS
     - Rails/Ruby
