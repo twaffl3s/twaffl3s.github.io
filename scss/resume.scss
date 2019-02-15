@@ -79,7 +79,7 @@ h4 {
 }
 /* PRINT CSS*/
 @media print {
-  nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p, .desktop-only{
+  nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p {
     display: none;
     margin: 0;
     margin-bottom: 0;

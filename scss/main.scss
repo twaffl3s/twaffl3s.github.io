@@ -12,7 +12,7 @@ This theme is property of Antoinette Janus and is not available for public use.
 */
 
 /*** GLOBAL : GENERAL STYLE DEFAULTS ***/
-// @import url(https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Serif);
+
 @import 'partials/fonts';
 @import 'partials/colors';
 @import 'partials/heart';
@@ -65,8 +65,8 @@ input[type="checkbox"]{
 }
 #nav-toggle {
   & + label {
-    display: block;
     position: absolute;
+    top: 0;
     left: 20%;
     transition: 0.2s;
     width: 1.4rem;
