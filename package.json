@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "jekyll serve",
     "compile-scss": "node ./build_scripts/scss.js",
-    "build": "npm run compile-scss && jekyll build"
+    "cp-scss": "node ./build_scripts/cp.js",
+    "build": "npm run compile-scss && npm run cp-scss && jekyll build"
   },
   "repository": {
     "type": "git",
