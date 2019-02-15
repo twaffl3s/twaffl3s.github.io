@@ -1,6 +1,6 @@
 const fs = require('fs');
 const join = require('path').join;
-const css_folder = path.join(__dirname + '/../css/min');
+const css_folder = join(__dirname + '/../css/min');
 
 console.log('**************************\nCopying Production CSS');
 fs.readdirSync(css_folder).forEach((file) => {
