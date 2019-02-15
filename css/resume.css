@@ -70,7 +70,16 @@ h4 {
 
 /* PRINT CSS*/
 @media print {
+<<<<<<< Updated upstream
   nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p {
+=======
+  html, body {
+    height: unset; }
+  main {
+    overflow: auto;
+    position: relative; }
+  nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p, #nav + label {
+>>>>>>> Stashed changes
     display: none;
     margin: 0;
     margin-bottom: 0; }
