@@ -143,8 +143,8 @@ input[type="checkbox"] {
   display: none; }
 
 #nav-toggle + label {
-  display: block;
   position: absolute;
+  top: 0;
   left: 20%;
   transition: 0.2s;
   width: 1.4rem;

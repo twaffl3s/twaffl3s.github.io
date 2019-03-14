@@ -79,7 +79,14 @@ h4 {
 }
 /* PRINT CSS*/
 @media print {
-  nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p {
+  html, body {
+    height: unset;
+  }
+  main {
+    overflow: auto;
+    position: relative;
+  }
+  nav, #footer, #resume h3 a, .screen, *:empty, #resume h3:empty, .row .resp ul + p, .desktop-only {
     display: none;
     margin: 0;
     margin-bottom: 0;
