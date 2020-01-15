@@ -16,11 +16,11 @@
 title: Antoinette's Portfolio
 email: acj.gfx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hello. My name is Antoinette Janus. I'm a developer and designer based in Washington, D.C. This is my portfolio.
+  Hello. I'm Antoinette Janus, a software engineer based in Seattle, Washington. Welcome to my portfolio.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://acjanus.co # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: twaffl3s
-github_username:  twaffl3s
+github_username:  internette
 
 # Build settings
 markdown: kramdown
