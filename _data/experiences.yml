@@ -6,12 +6,27 @@
 #   responsibilities:
 #     - 
 #   technologies:
-#     - 
+#     -
+
+- role: Engineer
+  company: LuLuLemon
+  date: 
+    start: JULY 2019
+  responsibilities:
+    - Implement new features, complete with unit tests
+    - Maintain documentation
+    - Onboard new engineers
+    - Run meetings when necessary
+    - Ensure products met accessibility standards
+    - Work cross-product streams
+  technologies: 
+    
 
 - role: Software Engineer
   company: PBS Kids
   date:
     start: MAY 2017
+    end: MAY 2019
   responsibilities:
     - Created producer sites with Craft CMS using any combination of Twig, PHP, and frameworks including React and Vue, including <a href="https://www.pbs.org/parents/rogers" target="_blank">Mister Rogers</a> and <a href="https://www.pbs.org/parents">PBS Kids for Parents</a>
     - Debugged JavaScript-based games
@@ -22,6 +37,7 @@
     - Regularly implemented and maintained documentation
     - Expanded pre-existing APIs and implementing new endpoints in PHP
     - Implemented GraphQL for pre-existing PHP-based APIs and Elastic Search technologies
+    - Ensure products met accessibility standards and conducted accessibility audits
   technologies:
     - JavaScript (Vanilla, Node)
     - GraphQL
