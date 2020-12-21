@@ -14,7 +14,7 @@
     "serve": "jekyll serve",
     "compile-scss": "node ./build_scripts/scss.js --production",
     "postcompile-scss": "node ./build_scripts/cp.js",
-    "build": "npm run compile-scss && jekyll build"
+    "build": "npm run compile-scss && bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
