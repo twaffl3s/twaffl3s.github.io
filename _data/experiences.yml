@@ -24,6 +24,7 @@
     - On-call rotation for sitewide support
   technologies: 
     - ReactJS/HTML
+    - GraphQL
     - SCSS
     - Jest (testing)
     - Gitlab
