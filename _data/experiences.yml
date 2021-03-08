@@ -18,14 +18,16 @@
     - Ensure products met accessibility standards
     - Work cross-product streams
     - Design System liaison for Checkout and Account product streams
-    - 
+    - CI/CD work with Gitlab
+    - Biweekly product stream health check monitoring with Sentry
+    - On-call rotation for sitewide support
   technologies: 
     - ReactJS/HTML
     - SCSS
     - Jest (testing)
     - Gitlab
     - NodeJS
-    - Sentry/BlueTriangle
+    - Sentry/BlueTriangle/CloudWatch
 
 - role: Software Engineer
   company: PBS Kids
